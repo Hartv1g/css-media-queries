@@ -1,0 +1,13 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+div{
+    text-align: center;
+    height: 100vh;
+}
+#output{
+    font-family: monospace;
+    font-size: 10rem;
+    line-height: 100vh;
+}

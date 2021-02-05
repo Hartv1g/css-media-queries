@@ -1,0 +1,94 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    h2{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    header{
+        height: 15vh;
+        background: lightskyblue;
+    }
+    main{
+        background: rgb(236, 236, 236);
+        height: 25vh;
+    }
+    .signup{
+        height: 15vh;
+        background: lightblue;
+    }
+    .feature1{
+        height: 15vh;
+        background: rgb(248, 175, 40);
+    
+    }
+    .feature2{
+        height: 15vh;
+        background: rgb(214, 62, 62);
+    }
+    .feature3{
+        height: 15vh;
+        background: rgb(170, 152, 231);
+    }
+}
+@media screen and (min-width: 600px){
+    body{
+        header{
+            height: 20vh;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            main{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 3;
+                height: 40vh;
+            }
+            .feature1, .feature2, .feature3, .signup{
+                height: 20vh;
+            }
+
+        }
+    }
+}
+@media screen and (min-width: 1024px){
+    body{
+        header{
+            height: 20vh;
+        }
+        .grid{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 35vh 10vh 35vh;
+            main{
+                height: 35vh;
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row-start: 3;
+                grid-row-end: 3;
+            }
+            .signup{
+                grid-column-start: 1;
+                grid-column-end: 4;
+                grid-row-start: 2;
+                height: 10vh;
+            }
+            .feature1, .feature2, .feature3{
+                height: 35vh;
+                grid-row-start: 1;
+                grid-row-end: 1;
+            }
+            .feature3{
+                grid-column-start: 2;
+                grid-column-end: 3;
+            }
+            
+        }
+       
+    }
+}
