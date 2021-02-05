@@ -1,10 +1,10 @@
 const d = new Date();
-let ctime = d.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+let ctime = d.toLocaleTimeString(["da"], {hour: '2-digit', minute:'2-digit'});
 
 let output = document.querySelector("#output");
 
-const breakStart = ["9:40 AM", "11:30 AM", "1:30 PM"]
-const breakEnd = ["10:00 AM", "12:00 PM", "1:40 PM"]
+const breakStart = ["9.40", "11.30", "13.30"]
+const breakEnd = ["10.00", "12.00", "13.40"]
 
 function isBreak (){
     for (let i = 0; i < breakStart.length; i++) {
